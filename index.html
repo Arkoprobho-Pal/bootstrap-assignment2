@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Photo Phactory</title>
+  <!--tab icon-->
+  <link rel="icon" href="images/logo.png">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--linking cdn bootsrap 4.3.1-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!--font awesome for icons-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--linking google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta|Orbitron&display=swap" rel="stylesheet">
+  
+  <!--custom css-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+
+
+<section>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="opacity: 0.9;">
+    <section class="container">
+        <h6>container</h6>
+            <a class="navbar-brand" href="#" id="company">
+            <img id="logo" src="images/logo.png" alt="myLogo"> Photo Phactory
+            </a>
+            <!--toggle button after shrink-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarResponsive">
+                <h6>collapsable navbar</h6>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!--dropdown element-->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Divisions</a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Potrait</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Landscape</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Street Photography</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Long exposure</a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search in website" aria-label="Search in webite..">
+                <button class="btn btn-dark" type="submit"><span class="fas fa-search"></span></button>
+              </form>
+            
+            </section>
+  </section>
+</nav>
+</section>
+<!--end of navigation bar-->
+<!-- Single hero unit-->
+<section id="cover" style="position: relative;text-align: center;color:white;">
+        <!--<img src="images/background.jpg" alt="bnw image">-->
+
+        <video control autoplay>
+                <source src="images/intro.mp4" type="video/mp4">
+                
+              </video>
+
+        <blockquote class="blockquote text-center" id="quote">
+                <p class="mb-0"><i class="fas fa-quote-left"></i>   A good photographer records;
+                    A great photographer reveals.   <i class="fas fa-quote-right"></i></p>
+                <footer class="blockquote-footer">Skyler Reid </footer>
+        </blockquote>
+</section>
+<!--ends-->
+
+<!-- Page Content -->
+<section class="container">
+  <h1 class="mt-4">What do you mean by Photograph?</h1>
+  <p>A photograph is an image that is recorded that the human eye can perceive. 
+      Main Purpose of a photographs is to capture life moments. Moments of happiness,
+       fun, friendship, etc. We would like those moments to last,
+       to remember them and to share them with others....</p>
+</section>
+<!-- /.container -->
+<br><br><br>
+<!--carousel-->
+<section class="container">
+    <h1 class="greeting">Welcome to <span id="company">Photo Phactory</span></h1>
+
+</section>
+<br><br>
+<!--slide show with carousel-->
+<section id="mycarouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mycarouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#mycarouselIndicators" data-slide-to="1"></li>
+          <li data-target="#mycarouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <section class="carousel-inner">
+            <section class="carousel-item active">
+                <img class="d-block w-100" src="images/potrait1.jpg" alt="First slide">
+            </section>
+            <section class="carousel-item">
+                <img class="d-block w-100" src="images/background.jpg" alt="Second slide">
+            </section>
+            <section class="carousel-item">
+                <img class="d-block w-100" src="images/horintal1.JPG" alt="Third slide">
+            </section>
+        </section>
+        <a class="carousel-control-prev" href="#mycarouselIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mycarouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </section>
+
+
+
+
+<!--end of carousel-->
+<!--griding-->
+<br><br>
+<section class="container">
+      <section class="row" id ="grid">
+            <section class="col-sm-4 ">
+              <img class="grid3img" src="images/photographer1.jpg">
+            <a href="https://en.wikipedia.org/wiki/Richard_Avedon">  
+                <h2>Richard Avedon</h2>
+            </a>
+                <p>Richard Avedon was an American fashion and portrait photographer.
+                     His iconic portraits of celebrities, spanned more than half of the 20th century,
+                      and included Marilyn Monroe, 
+                    Audrey Hepburn, The Beatles, Andy Warhol, and Tupac Shakur.
+                  An obituary published in The New York Times said that 
+                  "his fashion and portrait photographs helped define America's image of style,
+                   beauty and culture for the last half-century".</p>
+                   <blockquote class="blockquote text-center">
+                        <p class="mb-0"><i class="fas fa-quote-left"></i> My portraits are more about me 
+                            than they are about the people I photograph.   <i class="fas fa-quote-right"></i></p>
+                        <footer class="blockquote-footer">Richard Avedon </footer>
+                    </blockquote>
+            </section>
+           
+            <section class="col-sm-4 ">
+                    <img class="grid3img" src="images/photographer2.jpg">
+                  <a href="https://en.wikipedia.org/wiki/Henri_Cartier-Bresson">  
+                      <h2>Henri Cartier-Bresson</h2>
+                  </a>
+                      <p>Henri Cartier-Bresson was a French humanist photographer considered a master of 
+                          candid photography, and an early user of 35 mm film. 
+                          He pioneered the genre of street photography, and viewed photography as capturing a decisive moment. 
+                          Cartier-Bresson was one of the founding members of Magnum Photos in 1947.</p>
+                          <br><br><br>
+                          <blockquote class="blockquote text-center">
+                                <p class="mb-0"><i class="fas fa-quote-left"></i> In photography, 
+                                    the smallest thing can be a great subject. The little, 
+                                    human detail can become a Leitmotiv.   <i class="fas fa-quote-right"></i></p>
+                                <footer class="blockquote-footer">Henri Cartier-Bresson </footer>
+                            </blockquote>
+            </section>
+            <section class="col-sm-4 " id="change">
+                    <img class="grid3img" src="images/photographer3.jpg">
+                  <a href="https://en.wikipedia.org/wiki/Ansel_Adams">  
+                      <h2>Ansel Adams</h2>
+                  </a>
+                      <p>Ansel Easton Adams was a landscape photographer and environmentalist
+                           known for his black-and-white 
+                          images of the American West. He helped found Group f/64, 
+                          an association of photographers advocating "pure" 
+                          photography which favored sharp focus and the use of the 
+                          full tonal range of a photograph.</p>
+                          <br><br><br>
+                          <blockquote class="blockquote text-center">
+                                <p class="mb-0"><i class="fas fa-quote-left"></i> When words become unclear, 
+                                    I shall focus with photographs.
+                                     When images become inadequate, I shall be content with silence. 
+                                       <i class="fas fa-quote-right"></i></p>
+                                <footer class="blockquote-footer">Ansel Adams </footer>
+                        </blockquote>
+            </section>
+      </section>
+</section>
+
+
+<!--end of griding-->
+<!--photo tile-->
+<section class="container">
+
+</section>
+
+<!--footer-->
+
+    <section class="container" style="text-align: center;" id="social">
+            <h1>Show some <i class="fas fa-heart"></i></h1>
+            
+            <section class="social">
+                <h6>social icons</h6>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+            </section>
+
+
+            <br>
+           <p>Drop a Messege</p> 
+
+    </section>
+
+
+        <section class="jumbotron text-center" style="margin-bottom:0">
+            <h6>footer</h6>
+                <a class="navbar-brand" href="#" id="companyfooter">
+                    <span style="font-size:15px;color:black;">Copyright &copy</span>
+                        <img id="logofoot" src="images/logo.png" alt="myLogo"> Photo Phactory
+                        </a>
+                    <h5>All rights reserved 2019</h5>
+        </section>
+<!--end of footer-->
+</body>
+</html>
