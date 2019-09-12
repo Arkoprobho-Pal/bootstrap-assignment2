@@ -54,16 +54,16 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#" class="dropdown-item">Potrait</a>
+                                <a href="#portrait" class="dropdown-item">Portrait</a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">Landscape</a>
+                                <a href="#landscape" class="dropdown-item">Landscape</a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">Street Photography</a>
+                                <a href="#street" class="dropdown-item">Street Photography</a>
                             </li>
                             <li>
-                                <a href="#" class="dropdown-item">Long exposure</a>
+                                <a href="#longexp" class="dropdown-item">Long exposure</a>
                             </li>
                             
                         </ul>
@@ -75,7 +75,7 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#social">Contact</a>
                     </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -91,7 +91,6 @@
 <!-- Single hero unit-->
 <section id="cover" style="position: relative;text-align: center;color:white;">
         <!--<img src="images/background.jpg" alt="bnw image">-->
- A good photog
 
         <video control autoplay muted>
                 <source src="images/intro.mp4" type="video/mp4">
@@ -128,16 +127,21 @@
           <li data-target="#mycarouselIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#mycarouselIndicators" data-slide-to="1"></li>
           <li data-target="#mycarouselIndicators" data-slide-to="2"></li>
-        </ol>
-        <section class="carousel-inner">
-            <section class="carousel-item active">
-                <img class="d-block w-100" src="images/potrait1.jpg" alt="First slide">
+          <li data-target="#mycarouselIndicators" data-slide-to="3"></li>
+          
+        </ol><!--end of indicator-->
+        <section class="carousel-inner"><!--carousel items-->
+            <section class="carousel-item active" >
+                <img class="d-block w-100" src="images/portrait1.jpg" alt="First slide">
             </section>
             <section class="carousel-item">
                 <img class="d-block w-100" src="images/background.jpg" alt="Second slide">
             </section>
             <section class="carousel-item">
                 <img class="d-block w-100" src="images/horintal1.JPG" alt="Third slide">
+            </section>
+            <section class="carousel-item">
+                    <img class="d-block w-100" src="images/streethor3.jpg" alt="Fourth slide">
             </section>
         </section>
         <a class="carousel-control-prev" href="#mycarouselIndicators" role="button" data-slide="prev">
@@ -154,7 +158,7 @@
 
 
 <!--end of carousel-->
-<!--griding-->
+<!--grid of legendary photographers-->
 <br><br>
 <section class="container">
       <section class="row" id ="grid">
@@ -219,13 +223,32 @@
 
 
 <!--end of griding-->
+<br><br>
 <!--photo tile-->
-<section class="container">
+<section class="container-fluid">
+    <section class="row">
+         <section id="portrait" class="col-sm-3 no-gutter">
+             <img class="gallerytab" src="images/portrait/tab.jpeg"/>
+             <h2 class="overlay">Portrait</h2>
+         </section>
+         <section id="street" class="col-sm-3 no-gutter">
+                <img class="gallerytab" src="images/street/tab.jpg"/>
+                <h2 class="overlay">Street</h2>
+        </section>
+        <section id="landscape" class="col-sm-3 no-gutter">
+                <img class="gallerytab" src="images/landscape/tab.jpg"/>
+                <h2 class="overlay">Landscape</h2>
+        </section>
+        <section id="longexp" class="col-sm-3 no-gutter">
+                <img class="gallerytab" src="images/longexp/tab.jpg"/>
+                <h2 class="overlay">long Exposure</h2>
+        </section>    
+    </section>
 
 </section>
 
 <!--footer-->
-
+<br><br>
     <section class="container" style="text-align: center;" id="social">
             <h1>Show some <i class="fas fa-heart"></i></h1>
             
