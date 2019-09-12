@@ -7,7 +7,11 @@ body{
 h6{
     display: none;
 }
-
+/*album header*/
+h3{
+    color:goldenrod;
+    font-family: 'Dancing Script', cursive;
+}
 a{
     color:goldenrod;
     text-decoration: none;
@@ -115,6 +119,12 @@ video{
      
     visibility: visible;
     filter:contrast(80%);
+}
+
+/*galleryimage*/
+.galleryimage{
+    width:100%;
+    
 }
 /* soicial button*/
 .fa {
